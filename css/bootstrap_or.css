@@ -1,0 +1,6 @@
+/*[class*=span]:first-child {
+    margin-left: 0 !important;
+}*/
+/*.row-fluid [class*="span"] {
+	margin-left: 16px !important;
+}*/
