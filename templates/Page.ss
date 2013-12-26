@@ -4,14 +4,16 @@
 	<title>$Title &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
 
-<!--[if lt IE 9]>
-	<script src="$ThemeDir/javascript/html5shiv.js"></script>
-	<![endif]-->
-<!--[if lt IE 9]>
-	<script src="$ThemeDir/javascript/mq.js"></script>
-	<![endif]-->
-	<!--[if lte IE 9]><% require themedCSS(customIE) %><![endif]-->
-	
+	<!-- IE Stuff -->
+	<!--[if lt IE 9]>
+		<script src="$ThemeDir/javascript/html5shiv.js"></script>
+		<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="$ThemeDir/javascript/mq.js"></script>
+		<![endif]-->
+		<!--[if lte IE 9]><% require themedCSS(customIE) %><![endif]-->
+	<!-- EI Stuff End -->
+
 	<!-- Css Files Start -->
 	<% require themedCSS(style) %> <!-- All css -->
     <% require themedCSS(bootstrap) %> <!-- Bootstrap Css -->
@@ -39,7 +41,7 @@
 						<section class="span4">
 							<h1 id="logo">
 								<a href="index.html">
-									<img src="$ThemeDir/images/logo.png">
+									<img src="$BaseHref$ThemeDir/images/logo.png">
 								</a>
 							</h1>
 						</section>
@@ -57,7 +59,7 @@
 									<ul class="nav">
 										<% loop $Menu(1) %>
 											<% if $Children %>
-											<li class="dropdown" title="$Title.XML"> <a class="dropdown-toggle" href="#">  $MenuTitle.XML<b class="caret"></b> </a>
+											<li class="dropdown" title="$Title.XML"> <a class="dropdown-toggle" href="$Link">  $MenuTitle.XML<b class="caret"></b> </a>
 												<% loop $Children %>
 												<ul class="dropdown-menu">
 													<li><a href="$Link">  $MenuTitle.XML</a></li>
