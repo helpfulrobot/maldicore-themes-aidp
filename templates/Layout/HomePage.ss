@@ -1,10 +1,11 @@
 <% include SideBarLeft %>
 <figure class="span6 feature">
-<h1>$Title</h1>
+<% include WelcomeBanner %>
 <div class="ftr_txt">
 	$Content
 	$Form
 	$PageComments
 </div>
+<% include ForumBanner %>
 </figure>
 <% include SideBarRight %>
