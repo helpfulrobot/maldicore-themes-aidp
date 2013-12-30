@@ -1,11 +1,11 @@
-<% include SideBar %>
-<div class="content-container unit size3of4 lastUnit">
-	<article>
-		<h1>$Title</h1>
-		<div class="content">$Content</div>
-		<div class="content">$GoogleMaps</div>
-		<div class="content">$SideBarView</div>
-	</article>
-		$Form
-		$PageComments
+<% include SideBarLeft %>
+<figure class="span6 feature">
+<% include WelcomeBanner %>
+<div class="ftr_txt">
+	$Content
+	$Form
+	$PageComments
 </div>
+<% include ForumBanner %>
+</figure>
+<% include SideBarRight %>

@@ -3,6 +3,7 @@
 <head>
 	<title>$Title &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
+	<% base_tag %>
 
 	<!-- IE Stuff -->
 	<!--[if lt IE 9]>
@@ -40,7 +41,7 @@
 					<section class="row-fluid">
 						<section class="span4">
 							<h1 id="logo">
-								<a href="index.html">
+								<a href="$BaseHref">
 									<img src="$BaseHref$ThemeDir/images/logo.png">
 								</a>
 							</h1>
@@ -60,11 +61,11 @@
 										<% loop $Menu(1) %>
 											<% if $Children %>
 											<li class="dropdown" title="$Title.XML"> <a class="dropdown-toggle" href="$Link">  $MenuTitle.XML<b class="caret"></b> </a>
-												<% loop $Children %>
 												<ul class="dropdown-menu">
+												<% loop $Children %>
 													<li><a href="$Link">  $MenuTitle.XML</a></li>
-												</ul>
 												<% end_loop %>
+												</ul>
 											</li>
 
 											<% else %>
@@ -98,79 +99,7 @@
 		<section id="ngo_features" class="mbtm">
 			<section class="container-fluid container">
 				<section class="row-fluid">
-					<!-- Start of Features Box 1 -->
-					<figure class="span3 feature">
-						<div class="ftr_img f-img-1"> 
-							<a href=""><span class="img"> Become A Member </span></a>
-						</div>
-						<div class="ftr_txt">
-							  <p><a href="#"><i class="i"></i></a></p>
-							  <p><a href="#"><i class="i"></i> Animal Husbandry</a></p>
-							  <p><a href="#"><i class="i"></i> Crop Production</a></p>
-							  <p><a href="#"><i class="i"></i> Pest &amp; Diseases</a></p>
-							  <p><a href="#"><i class="i"></i> Pest &amp; Disease Control</a></p>
-							  <p><a href="#"><i class="i"></i> Food, Food Safety &amp; Nutrition</a></p>
-							  <p><a href="#"><i class="i"></i> Post Harvest &amp; Processing</a></p>
-							  <p><a href="#"><i class="i"></i> Forestry</a></p>
-							  <p><a href="#"><i class="i"></i> Home Gardening</a></p>
-							  <p><a href="#"><i class="i"></i> Hydroponics</a></p>
-						</div>
-						<div class="ftr_img f-img-2"> 
-							<a href=""><span class="img"> For Kids </span></a>
-						</div>
-					</figure>
-					<!-- End of Features Boxes 1 -->
-
-					<!-- Start of Features Box 2 -->
-					<figure class="span6 feature">
-						<div class="ftr_img f-img-3"> 
-							<span class="img"> Welcome to Portal </span>
-						</div>
-						<div class="ftr_txt">
-							<strong> Welcome to AIDP </strong>
-							<p> Welcome alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. 
-							You will find alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. Soluta intellegebat vim id, vix timeam latine electram at. Soluta intellegebat vim id, vix timeam latine electram at. Soluta intellegebat vim id, vix timeam latine electram at. </p>
-						</div>
-						<div class="ftr_txt">
-							<strong> Aims &amp; Objectives </strong>
-							Aims alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. 
-							Aims alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. 
-							Objective alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. 
-							Objective alorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at. Soluta intellegebat vim id, vix timeam latine electram at.</p>
-						</div>
-						<div class="ftr_img f-img-4"> 
-							<a href=""><span class="img"> Discussin Forum </span></a>
-						</div>
-					</figure>
-					<!-- End of Features Boxes 2 -->
-
-					<!-- Start of Features Box 3 --> 
-					<figure class="span3 feature">
-						<div class="ftr_txt">
-							<strong> Search </strong>
-							<form method="post" actoion="#">
-								<input type="text" value="Search Here..." name="s" id="s" /> <button class="search"><i class="icon-search"></i> </button>
-							</form>
-						</div>
-						<div class="ftr_txt">
-							<strong> Menu </strong>
-							  <p><a href="#"><i class="i"></i> Application Forms</a></p>
-							  <p><a href="#"><i class="i"></i> Publications</a></p>
-							  <p><a href="#"><i class="i"></i> Laws &amp; Regulations</a></p>
-							  <p><a href="#"><i class="i"></i> Registries</a></p>
-						</div>
-						<div class="ftr_txt">
-							<strong> News Updates </strong>
-							<p> <a href="#">Malorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at.</a> </p>
-							<p> <a href="#">Malorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at.</a> </p>
-							<p> <a href="#">Malorum prompta, mel ea sumo semper nusquam. Soluta intellegebat vim id, vix timeam latine electram at.</a> </p>
-						</div>
-						<div class="ftr_txt"><strong>Useful Links</strong>
-						  <p><a href="#"><i class="i"></i> Ministry of Fisheries &amp; Agriclture</a></p>
-						  <p><a href="#"><i class="i"></i> AIDC</a></p>
-						</div>
-					</figure>
-					<!-- End of Features Boxes 3 -->
+					$Layout
 				</section>
 			</section>
 		</section>
