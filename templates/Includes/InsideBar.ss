@@ -15,10 +15,10 @@
 		<% loop $LatestNews %>
 		    <p> <a href="$Link">$Title</a> </p>
 		<% end_loop %>
-		
 	</div>
 	<div class="ftr_txt"><strong>Useful Links</strong>
-	  $SideBarView
+	  <p><a href="#"><i class="i"></i> Ministry of Fisheries &amp; Agriclture</a></p>
+	  <p><a href="#"><i class="i"></i> AIDC</a></p>
 	</div>
 </figure>
 <!-- End of SideBar Right -->

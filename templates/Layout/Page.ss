@@ -1,5 +1,4 @@
-<% include SideBarLeft %>
-<figure class="span6 feature">
+<figure class="span9 feature">
 <h1>$Title</h1>
 <div class="ftr_txt">
 	$Content
@@ -7,4 +6,4 @@
 	$PageComments
 </div>
 </figure>
-<% include SideBarRight %>
+<% include InsideBar %>
