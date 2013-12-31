@@ -183,7 +183,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 
 /** Features Boxes **/
 .feature{  overflow:hidden; -webkit-box-shadow:  1px 1px 8px -6px #000000 ; box-shadow:1px 1px 8px -6px #000000; }
-.feature .ftr_img{ background:#fff; padding:0px 0; display:block;}
+.feature .ftr_img{ background:#fff; padding:2px 0; display:block;}
 .ftr_img .img{ display:block;  width:80px; height:80px; margin:0 auto; text-indent:-999px; overflow:hidden;}
 .f-img-1 .img{ background:url('../images/feature_img_1.png') top center no-repeat;}
 .f-img-2 .img{ background:url('../images/feature_img_2.png') top center no-repeat;}
