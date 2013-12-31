@@ -1,7 +1,7 @@
 <!-- Start of SideBar Left -->
 <figure class="span3 feature">
 	<div class="ftr_img f-img-1"> 
-		<a href=""><span class="img"> Become A Member </span></a>
+		<a href=""><span> $SiteConfig.MemberImage.SetRatioSize(270,80) </span></a>
 	</div>
 	<div class="ftr_txt">
 		  <% loop $MenuSet('LeftMenu').MenuItems %>
@@ -9,7 +9,7 @@
 		<% end_loop %>
 	</div>
 	<div class="ftr_img f-img-2"> 
-		<a href=""><span class="img"> For Kids </span></a>
+		<a href=""><span> $SiteConfig.KidsImage.SetRatioSize(270,80) </span></a>
 	</div>
 </figure>
 <!-- End of SideBar Left -->
