@@ -1,4 +1,5 @@
 <% if $Pages && $Level(2) %>
+<figure id="breadcrumbs" class="span12">
 	<ul class="breadcrumb">
 	<% loop $Pages %>
 		<% if $Last %>
@@ -8,4 +9,5 @@
 		<% end_if %>
 	<% end_loop %>
 	</ul>
+</figure>
 <% end_if %>
