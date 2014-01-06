@@ -162,11 +162,9 @@
 						<figure class="span6" id="footer_left">
 
 							<ul class="footer_nav"> 
-								<li> <a href="#">	Home 		</a> </li>
-								<li> <a href="#"> 	Terms of Use	</a> </li>
-								<li> <a href="#"> 	Privacy Policy	</a> </li>
-								<li> <a href="#"> 	Forum	</a> </li>
-								<li> <a href="#"> 	Contact		</a> </li>
+							<% loop $MenuSet('FooterMenu').MenuItems %>
+							    <li> <a href="$Link">	$MenuTitle 		</a> </li>
+							<% end_loop %>
 							</ul>
 							<p> Copyright © 2014 - AIDP, <a href="http://www.fishagri.gov.mv"> Ministry of Fisheries &amp; Agriculture </a></p>
 
