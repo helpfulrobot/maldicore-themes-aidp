@@ -88,14 +88,40 @@
 			<!-- End Main Nav Bar -->	 
 		</header>
 		<!-- End of Header -->
-
-		<!-- Start of Header Banner -->
+		
+		<% if $Title == 'Home' %>
+		<!-- Start of Header Banner/Slider -->
 		<section class="banner_slider mbtm">
 
 		</section>
-		<!-- End of Header Banner -->
+		<!-- End of Header Banner/Slider -->
+		<% else %>
+		<!-- Title & BreadCrumbs -->
+		<section class="mtop">
+			<section class="container-fluid container">
+				<section class="row-fluid">
+					<section id="donation_box">
+						<section class="container container-fluid">
+							<section class="row-fluid">
+								<div class="span8 first"> <h2> $Title</h2> </div>
+								<div class="span4 title_right"></div>
+							</section>
+						</section>
+					</section>		<!-- end of Page Title -->
+				</section>
+				<section class="row-fluid">
+					<!-- BreadCrumbs -->
+					<figure id="breadcrumbs" class="span12">
+						$Breadcrumbs
+					</figure>
+					<!-- End of breadcrumbs -->
+				</section>
+			</section>
+		</section>
+		<!-- End of Tile & Breadcrumbs -->
+		<% end_if %>
 
-		<!-- Start of Features Boxes -->
+		<!-- Start of Content Boxes -->
 		<section id="ngo_features" class="mbtm">
 			<section class="container-fluid container">
 				<section class="row-fluid">
@@ -103,7 +129,7 @@
 				</section>
 			</section>
 		</section>
-		<!-- End of Features Boxes -->
+		<!-- End of Content Boxes -->
 
 
 
