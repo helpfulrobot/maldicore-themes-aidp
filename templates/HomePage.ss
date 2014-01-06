@@ -33,32 +33,13 @@
 <body>
 	<!-- Start Main Wrapper -->
 	<div class="wrapper">
-		
 		<% include Header %>
 		
-		<!-- Title & BreadCrumbs -->
-		<section class="mtop">
-			<section class="container-fluid container">
-				<section class="row-fluid">
-					<section id="donation_box">
-						<section class="container container-fluid">
-							<section class="row-fluid">
-								<div class="span8 first"> <h2> $Title</h2> </div>
-								<div class="span4 title_right"></div>
-							</section>
-						</section>
-					</section>		<!-- end of Page Title -->
-				</section>
-				<section class="row-fluid">
-					<!-- BreadCrumbs -->
-					<figure id="breadcrumbs" class="span12">
-						$Breadcrumbs
-					</figure>
-					<!-- End of breadcrumbs -->
-				</section>
-			</section>
+		<!-- Start of Header Banner/Slider -->
+		<section class="banner_slider mbtm">
+			<!-- Slider Not Included in this Template -->
 		</section>
-		<!-- End of Tile & Breadcrumbs -->
+		<!-- End of Header Banner/Slider -->
 
 		<!-- Start of Content Boxes -->
 		<section id="ngo_features" class="mbtm">
