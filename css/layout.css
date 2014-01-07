@@ -747,6 +747,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 #sidebar #posts li:last-child{ margin-bottom:0;}
 #sidebar ul{ margin:0; padding:0; list-style-type:none; }
 #sidebar h3{ font-weight:bold; margin:0 0 15px 0; padding:0px 0px 5px 0; border-bottom:1px solid #363636;  background:none; line-height:18px; }
+#sidebar form { margin: 0; }
 #sidebar .widget {overflow:hidden; padding-bottom:10px; margin-bottom:10px; }
 #sidebar .post_content a{ color:#444444;}
 #sidebar #posts h4{ margin-top:0; }

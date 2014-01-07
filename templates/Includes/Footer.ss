@@ -57,7 +57,7 @@
 					    <li> <a href="$Link">	$MenuTitle 		</a> </li>
 					<% end_loop %>
 					</ul>
-					<p> Copyright © 2014 - AIDP, <a href="http://www.fishagri.gov.mv"> Ministry of Fisheries &amp; Agriculture </a></p>
+					<p> Copyright © $Now.Year - AIDP, <a href="http://www.fishagri.gov.mv"> Ministry of Fisheries &amp; Agriculture </a></p>
 
 				</figure>
 

@@ -1,6 +1,6 @@
 <!-- Start of SideBar Right --> 
 <section id="sidebar" class="span3">
-	<figure class="widget events">
+	<figure class="widget search">
 		<h3> <i class="icon-search"></i> Search </h3>
 		$SearchForm
 	</figure>
@@ -27,6 +27,9 @@
 			<p> - <a href="$Link">$Title</a> </p>
 			</li>
 		<% end_loop %>
+		</ul>
+		<ul id="tags">
+			<li> <a href="{$BaseHref}news"> More </a> </li>
 		</ul>
 	</figure>
 	<figure class="widget post_archives">
