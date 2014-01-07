@@ -4,7 +4,7 @@
 		<div class="post_meta_detail"> 
 			<ul>
 				<li class="date"> <i class="icon-time"></i>  $Created.Nice  </li>
-				<li class="commetns pull-right"> <i class="icon-comment"></i>		<a href="#"> 10 Comments </a> </li>
+				<li class="commetns pull-right"></li>
 			</ul>				
 		</div>
 		<div class="span12 first post_detail"> 

@@ -56,7 +56,6 @@
 	<!-- End Main Wrapper -->
 	<!-- JS Files Start -->
 	<script type="text/javascript" src="$ThemeDir/javascript/lib-1-9-1.js"></script><!-- lib Js -->
-	<script type="text/javascript" src="$ThemeDir/javascript/lib-1-7-1.js"></script><!-- lib Js -->
 	<script type="text/javascript" src="$ThemeDir/javascript/modernizr.js"></script><!-- Modernizr -->
 	<script type="text/javascript" src="$ThemeDir/javascript/easing.js"></script><!-- Easing js -->
 	<script type="text/javascript" src="$ThemeDir/javascript/bootstrap.js"></script><!-- Bootstrap -->
