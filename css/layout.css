@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
+/*@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);*/
 @import url('prettyPhoto.css');
 @import url('social.css'); 
 /** Table Of Content 
@@ -500,7 +500,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 	.gallery_img h2 {   text-transform: uppercase;   color: #fff;   text-align: center;   position: relative;   font-size: 17px;   padding: 10px;   background: rgba(0, 0, 0, 0.8);   margin: 20px 0 0 0; }
 	.gallery_img p {    font-family: Georgia, serif;  font-style: italic;   font-size: 12px;   position: relative;   color: #fff;   padding: 10px 20px 20px;   text-align: center;}
 	.gallery_img a.info {   display: inline-block;   text-decoration: none;   padding: 7px 14px;   background: #000;   color: #fff;   text-transform: uppercase;   -webkit-box-shadow: 0 0 1px #000;   -moz-box-shadow: 0 0 1px #000;   box-shadow: 0 0 1px #000;}
-	.gallery_img a.info: hover {   -webkit-box-shadow: 0 0 5px #000;   -moz-box-shadow: 0 0 5px #000;   box-shadow: 0 0 5px #000;}
+	.gallery_img a.info:hover {   -webkit-box-shadow: 0 0 5px #000;   -moz-box-shadow: 0 0 5px #000;   box-shadow: 0 0 5px #000;}
 	/** Image Hover Animation **/
 
 
@@ -740,6 +740,8 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 .team_holder{ margin-bottom:25px; }
 
 /** Sidebar **/
+#sidebar .middleColumn { float:left;}
+#sidebar .action { width:37px; height:29px; margin-left: 7px;}
 #sidebar { font-size:13px; }
 #sidebar #posts li{ margin-bottom:10px; overflow:hidden;}
 #sidebar #posts li:last-child{ margin-bottom:0;}
