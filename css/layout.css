@@ -96,8 +96,8 @@ a img:hover { opacity:0.6; transition: width 1s; -moz-transition: 1s; /* Firefox
 /** CSS IMPORT BX SLIDER **/
 
 /** Tags use once Line 105**/
-.mbtm{ margin-bottom:50px;}
-.mtop{ margin-top:50px;}
+.mbtm{ margin-bottom:5px;}
+.mtop{ margin-top:5px;}
 .h-line{ border-top:2px solid #31c8ce; width:75px; position:absolute; bottom:0; left:0;}
 .mtp{ margin-top:50px; }
 #content h3{ font-size:18px; line-height:24px; margin:0 0 12px;}
@@ -203,7 +203,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 
 /** Donation Section **/
 #donation_box{-webkit-box-shadow:  1px 1px 8px -6px #000000 ; box-shadow:  1px 1px 8px -6px #000000; max-width:1170px; margin-left:auto; margin-right:auto;}
-#donation_box .container{ background:#fff; padding:25px 0; }
+#donation_box .container{ background:#fff; padding:10px 0; }
 #donation_box form{ margin:0;}
 #donation_box h2{ font-weight:normal; border-left:3px solid #1cc3c9; padding-left:17px; margin:0; line-height:27px; }
 #donation_box button{ background:#1abfc6; color:#fff; border:0; padding-left:30px; padding-right:30px; border-radius:5px;  -webkit-border-radius:5px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}
@@ -441,8 +441,8 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 /** End of page Title **/
 
 /** Breadcrumbs settings **/
-#breadcrumbs { margin:20px 0 0;}
-#breadcrumbs .breadcrumb{ background:none;}
+#breadcrumbs { margin:2px 0 0;}
+#breadcrumbs .breadcrumb{ background:none; margin: 0;}
 
 /** 404 Page **/
 .p404{ text-align:center}
