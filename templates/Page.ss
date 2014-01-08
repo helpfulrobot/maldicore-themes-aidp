@@ -61,13 +61,7 @@
 		<!-- End of Tile & Breadcrumbs -->
 
 		<!-- Start of Content Boxes -->
-		<section id="ngo_features" class="mbtm">
-			<section class="container-fluid container">
-				<section class="row-fluid">
 					$Layout
-				</section>
-			</section>
-		</section>
 		<!-- End of Content Boxes -->
 
 		<% include Footer %>
