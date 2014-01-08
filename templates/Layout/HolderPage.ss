@@ -5,15 +5,16 @@
 <% if PaginatedPages %>
     <% loop PaginatedPages %>
         <figure class="blog_item">
+            <% if isFeaturePhoto %>
             <figure id="category_image" class="span12 first outer_lyr">
                 <div class="gallery_img gallery_img-first">
-                    <img src="images/blog1.jpg" />
+                    $FeaturePhoto.SetWidth(895)
                     <div class="mask">
-                        <a href="#" class="anchor"> <span> 10 </span> <i class="icon-comment"></i> </a>
-                        <a href="#" class="anchor"> <i class="icon-link"></i> </a>
+                        <a href="$Link" class="anchor"> <i class="icon-share"></i> </a>
                     </div>
                 </div>
-            </figure>                   
+            </figure>
+            <% end_if %>     
             <div class="outer_lyr span12 first">
                 <div class="inner_lyr">
                     <div class="span3 first post_meta"> 
