@@ -20,6 +20,7 @@
 						$Content
 						$Form
 						$PageComments
+						<% include Documents %>
 					</div>
 
 				</figure>
