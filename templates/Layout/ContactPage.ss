@@ -22,14 +22,14 @@
 			<section id="contact_info" class="span6 contact_info">
 				<h3> Contact Information </h3>
 
-				<figure class="span12 first"> <i class="icon-mobile-phone"></i> info@behuman.com</figure>
+				<figure class="span12 first"> <i class="icon-mobile-phone"></i> info@agri.mv</figure>
 
-				<figure class="span12 first"> <i class="icon-envelope-alt"></i> 111-22-3333</figure>
+				<figure class="span12 first"> <i class="icon-envelope-alt"></i> 3233333</figure>
 
 				<figure class="span12 first"> 
 					<div class="span6 fisrt">
 						<i class="icon-map-marker"></i> 
-						533 Azmat st., New-York, USA <br />
+						AIDP, Ministry of Fisheries & Agriculture, Male' Maldives <br />
 					</div>
 				</figure>
 				<figure id="n_social" class="span12 first"> 
