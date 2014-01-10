@@ -1,8 +1,4 @@
 <!-- Start of Content Boxes -->
-<section id="ngo_features" class="mbtm blog">
-    <section class="container-fluid container">
-        <section class="row-fluid">
-            <section class="span12" id="blog_listing">
 <% include ForumHeader %>
 
 <% if ForumAdminMsg %>
@@ -72,8 +68,3 @@
 </div><!-- forum-features. -->
 
 <% include ForumFooter %>
-</section>
-
-        </section>
-    </section>
-</section>
