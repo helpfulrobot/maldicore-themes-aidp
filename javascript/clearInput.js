@@ -1,7 +1,7 @@
-$(document).ready(function(){
+jQuery(document).ready(function(){
 						   
-	$(".divClass .deleteDiv").click(function(){
-		$(this).parents(".divClass").animate({ opacity: 'hide' }, "slow");
+	jQuery(".divClass .deleteDiv").click(function(){
+		jQuery(this).parents(".divClass").animate({ opacity: 'hide' }, "slow");
 	});
 
 });

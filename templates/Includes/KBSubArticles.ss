@@ -1,9 +1,9 @@
 <% require themedCSS(KBArticleList) %>
-
-<% if FeaturedArticles %>
-    <div class="FeaturedArticles ArticleSection">
+<% if SubArticles %>
+    <div class="ArticleSection">
+        <h2><% _t('ARTICLES', 'Related Articles') %></h2>
         <ul class="ArticleList">
-            <% loop FeaturedArticles %>
+            <% loop SubArticles %>
                 <% include KBArticleLink %>
             <% end_loop %>
         </ul>

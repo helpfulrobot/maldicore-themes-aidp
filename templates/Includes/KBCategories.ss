@@ -1,20 +1,18 @@
-<% if ChildCategories %>
+
+<% if AllCategories %>
     <div class="CategoryFeature">
-        <h2><% _t('CATEGORIES', 'Categories') %></h2>
-        <ul class="CategoryList">
-            <% loop ChildCategories %>
-                <li class="Item">
-                    <h2 class="ItemTitle"><a href="$Link.ATT">$MenuTitle.XML <% if SubArticles %>($SubArticles.Count)<% end_if %></a></h2>
-                    <% if Description %><p class="Description">$Description</p><% end_if %>
-                    <% if ChildCategories %>
-                        <ul class="SubCategories">
-                            <% loop ChildCategories %>
-                                <li class="SubItem"><h3 class="SubItemTitle"><a href="$Link.ATT">$MenuTitle.XML <% if SubArticles %>($SubArticles.Count)<% end_if %></a></h3></li>
-                            <% end_loop %>
-                        </ul>
+        <h3 class="cat"><% _t('CATEGORIES', 'Categories') %></h3>
+        <div class="CategoryList">
+            <% loop AllCategories %>
+                <div class="Item span4">
+                    <h4><i class="icon-edit"></i> <a href="$Link.ATT">$MenuTitle.XML <% if SubArticles %>($SubArticles.Count)<% end_if %></a></h4>
+                    <% if Description %>
+                            <p>$Description</p>
+                    <% else_if Content %>
+                            <p>$Content</p>
                     <% end_if %>
-                </li>
+                </div>
             <% end_loop %>
-        </ul>
+        </div>
     </div>
 <% end_if %>

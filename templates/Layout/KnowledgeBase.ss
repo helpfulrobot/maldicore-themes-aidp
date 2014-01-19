@@ -3,9 +3,9 @@
         <section class="row-fluid">
             <div class="haveQuestion"><h2>Do You Have a Question?</h2></div>
             <div class="descQuestion">If you have any question you can ask or enter what you are looking for!</div>
-            <form id="search_form" action="#" method="post"> 
-                    <input type="text" name="search" value="Perhaps you can find it using the search option" />
-                    <button> <i class="icon-search"></i> </button>
+            <form id="search_form" action="{$BaseHref}home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+                    <input type="text" name="Search" value="" id="SearchForm_SearchForm_Search" class="span9 search-query focus">
+                    <button type="submit" class="btn" id="SearchForm_SearchForm_action_result"><i class="icon-search"></i> </button>
             </form>
 
             <section class="listing_404 first">
@@ -41,7 +41,7 @@
                     </div>
                 </figure>
                 </section>
-                <section class="listing_404 span9">
+                <section class="listing_404 first span8">
                     <% include KBCategories %>
                 </section>
         <% include ContentFooterNoSideBar %>

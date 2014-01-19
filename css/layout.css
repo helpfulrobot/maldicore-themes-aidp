@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic);
 @import url('prettyPhoto.css');
 @import url('social.css'); 
 /** Table Of Content 
@@ -444,11 +445,12 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 #breadcrumbs .breadcrumb{ background:none; margin: 0;}
 
 /** 404 Page **/
-.p404{ text-align:center}
+.p404 .haveQuestion, .p404 .descQuestion { text-align:center}
 .p404 h3 i{ border-radius:500px 500px 500px 500px; -webkit-border-radius:500px 500px 500px 500px; background:#1cc3c9; text-align:center; padding:8px 15px; font-size:20px; color:#fff;}
 .p404 form{ background:#fff; display:block; padding:0 10px; max-width:70%; margin:0 auto; border:1px solid #d2d2d2; overflow:hidden; margin-top:50px;}
 .p404 form input[type="text"]{ border:0; box-shadow:none; width:90%; float:left; height:30px; margin-bottom:0;}
 .p404 form button{ border:0; background:transparent; float:right; color:#999999; font-size:18px; margin-top:8px;}
+.cat {text-align: left;}
 #listing_widget{ margin-bottom:20px;}
 #listing_widget h3{ overflow:hidden; position:relative; text-align:left; line-height:24px; }
 #listing_widget ul{ list-style-type:none; text-align:left; margin:0; }
