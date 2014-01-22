@@ -1,16 +1,4 @@
-<!-- Start of Content Boxes -->
-<section id="ngo_features" class="mbtm">
-	<section class="container-fluid container">
-		<section class="row-fluid">
-			<section class="span9" id="blog_post_detail">
-
-				<figure class="blog_post mbtm">
-					<% if PhotoSized %>
-					<div class="gallery_img">
-						<img src="$PhotoSized(895).URL" class="right" />
-					</div>
-					<% end_if %>
-					<div class="span12 first post_detail"> 
+<% include StatTableHeader %>
 						$Content
 						<% if LiveStockImportRequests %>
 							<div class="span12">
@@ -27,6 +15,7 @@
 								<thead>
 									<tr>
 										<th>Date</th>
+										<th>Import</th>
 										<th>Quantity</th>
 										<th filter-type='ddl'>Type</th>
 										<th>Purpose</th>
@@ -40,6 +29,7 @@
 										<% loop RequestItems %>
 										<tr>
 											<td>$Up.DateOfImport.Nice</td>
+											<td>$LiveStockAnimal.Name</td>
 											<td>$Quantity</td>
 											<td>$LiveStockImportItemType.Name</td>
 											<td>$Up.Purpose</td>
@@ -52,12 +42,4 @@
 							</table>
 						<% end_if %>
 						<% include Documents %>
-					</div>
-
-				</figure>
-			</section>
-			<% include InsideBar %>
-		</section>
-	</section>
-</section>
-<!-- End of Content Boxes
+<% include StatTableFooter %>

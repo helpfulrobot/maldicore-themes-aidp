@@ -1,6 +1,6 @@
 <% include StatTableHeader %>
 						$Content
-						<% if AgriPrices %>
+						<% if BirdFarm %>
 							<div class="span12">
 								<!-- <p>Quick Find: <input type="text" id="quickfind"/> <a id="cleanfilters" href="#">Clear Filters</a></p> -->
 								<h4>Search Tips</h4>
@@ -14,28 +14,26 @@
 							<table id="filter_table" class="table">
 								<thead>
 									<tr>
-										<th>Date</th>
-										<th>Quantity</th>
-										<th filter-type='ddl'>Item</th>
-										<th>Boat Price (Rf)</th>
-										<th>Market Price 1 (Rf)</th>
-										<th>Market Price 2 (Rf)</th>
+										<th>Farm Name</th>
+										<th>Address</th>
+										<th filter-type='ddl'>Atoll</th>
+										<th filter-type='ddl'>Island</th>
+										<th>Farm Type</th>
+										<th>Owner</th>
+										<th>Owner Contact</th>
 									</tr>
 								</thead>
-								<% loop AgriPrices %>
+								<% loop BirdFarm %>
 									<!-- Table Header -->
-									<% if AgriPriceItems %>
-										<% loop AgriPriceItems %>
 										<tr>
-											<td>$Up.CollectedDate.Nice</td>
-											<td>$Quantity $Measurement.Name</td>
-											<td>$AgriProduce.Name</td>
-											<td>{$BoatPrice}</td>
-											<td>{$MarketPrice1}</td>
-											<td>{$MarketPrice2}</td>
+											<td>$Name</td>
+											<td>$Address</td>
+											<td>$Atoll.Name</td>
+											<td>$Island.Name</td>
+											<td>$BirdFarmType.Name</td>
+											<td>$Owner.Name</td>
+											<td>$Owner.ContactNo <br/> $Owner.Email</td>
 										</tr>
-										<% end_loop %>
-									<% end_if %>
 								<% end_loop %>
 							</table>
 						<% end_if %>
