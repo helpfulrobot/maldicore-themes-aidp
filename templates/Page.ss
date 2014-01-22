@@ -68,7 +68,7 @@
 	</div>
 	<!-- End Main Wrapper -->
 	<!-- JS Files Start -->
-	<script type="text/javascript" src="$ThemeDir/javascript/lib-1-9-1.js"></script><!-- lib Js -->
+	<script type="text/javascript" src="$ThemeDir/javascript/lib-1-7-1.js"></script><!-- lib Js -->
 	<script type="text/javascript" src="$ThemeDir/javascript/modernizr.js"></script><!-- Modernizr -->
 	<script type="text/javascript" src="$ThemeDir/javascript/easing.js"></script><!-- Easing js -->
 	<script type="text/javascript" src="$ThemeDir/javascript/bootstrap.js"></script><!-- Bootstrap -->
@@ -79,6 +79,8 @@
 	<script type="text/javascript" src="$ThemeDir/javascript/prettyPhoto.js"></script><!-- Pretty Photo -->
 	<script type="text/javascript" src="$ThemeDir/javascript/social.js"></script><!-- Social Media Hover Effect -->
 	<script type="text/javascript" src="$ThemeDir/javascript/countdown.js"></script><!-- Event Counter -->
+	<script type="text/javascript" src="$ThemeDir/javascript/picnet.table.filter.min.js"></script><!-- Event Counter -->
+	<script type="text/javascript" src="$ThemeDir/javascript/script.js"></script><!-- Event Counter -->
 
 	<script type="text/javascript" src="$ThemeDir/javascript/custom.js"></script><!-- Custom / Functions -->
 <!--[if IE 8]>
