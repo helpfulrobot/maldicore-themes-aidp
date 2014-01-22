@@ -17,17 +17,19 @@
 								On: $CollectedDate.Nice
 								<% if AgriPriceItems %>
 									<div class="span12">
-										<div class="span2 pricelabel">Quantity</div>
 										<div class="span2 pricelabel">Item</div>
-										<div class="span3 pricelabel">Boat Price</div>
-										<div class="span5 pricelabel">Market Price</div>
+										<div class="span2 pricelabel">Quantity</div>
+										<div class="span2 pricelabel">Boat Price</div>
+										<div class="span3 pricelabel">Market Price 01</div>
+										<div class="span3 pricelabel">Market Price 02</div>
 									</div>
 									<% loop AgriPriceItems %>
 										<div class="span12">
-											<div class="span2">$Quantity $Measurement.Name</div>
 											<div class="span2">$AgriProduce.Name</div>
-											<div class="span3">Rf{$BoatPrice}</div>
-											<div class="span5">Rf{$MarketPrice1} to Rf{$MarketPrice2}</div>
+											<div class="span2">$Quantity $Measurement.Name</div>
+											<div class="span2">Rf{$BoatPrice}</div>
+											<div class="span3">Rf{$MarketPrice1}</div>
+											<div class="span3">Rf{$MarketPrice2}</div>
 										</div>
 									<% end_loop %>
 								<% end_if %>
