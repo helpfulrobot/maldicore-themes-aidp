@@ -3,6 +3,13 @@ jQuery.noConflict();
 (function($) {    
     $(document).ready(function() {
 										 
+		/* Market Information Table to FilterTable */
+		var filterOptions = {
+			// additionalFilterTriggers:[$('#quickfind')],
+			clearFiltersControls: [$('#cleanfilters')],
+		};
+		$('#market_information').tableFilter(filterOptions);
+
 		/* removes text from search form on focus and replaces it on unfocus - if text is entered then it does not get replaced with default on unfocus */
 		$('#SearchForm_SearchForm_action_results').val('L');
 		var searchField = $('#SearchForm_SearchForm_Search');
