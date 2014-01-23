@@ -1,6 +1,6 @@
 <% include StatTableHeader %>
 						$Content
-						<% if AgriPrices %>
+						<% if Dhafthar %>
 							<div class="span12">
 								<!-- <p>Quick Find: <input type="text" id="quickfind"/> <a id="cleanfilters" href="#">Clear Filters</a></p> -->
 								<h4>Search Tips</h4>
@@ -13,32 +13,27 @@
 							</div>
 							<table id="filter_table" class="table">
 								<thead>
+									<!-- Table Header -->
 									<tr>
-										<th>Date</th>
-										<th>Quantity</th>
-										<th filter-type='ddl'>Item</th>
-										<th>Boat Price (Rf)</th>
-										<th>Market Price 1 (Rf)</th>
-										<th>Market Price 2 (Rf)</th>
+										<th>Registry ID</th>
+										<th>Dhafthar No</th>
+										<th filter-type='ddl'>Gender</th>
+										<th>Name</th>
+										<th>Permanent Address</th>
+										<th>Contact Information</th>
 									</tr>
 								</thead>
-								<% loop AgriPrices %>
-									<!-- Table Header -->
-									<% if AgriPriceItems %>
-										<% loop AgriPriceItems %>
-										<tr>
-											<td>$Up.CollectedDate.Nice</td>
-											<td>$Quantity $Measurement.Name</td>
-											<td>$AgriProduce.Name</td>
-											<td>{$BoatPrice}</td>
-											<td>{$MarketPrice1}</td>
-											<td>{$MarketPrice2}</td>
-										</tr>
-										<% end_loop %>
-									<% end_if %>
+								<% loop Dhafthar %>
+									<tr>
+										<td>$RegistryId</td>
+										<td>$DhaftharNo</td>
+										<td>$Gender.Name</td>
+										<td>$Name</td>
+										<td>$PermanentAddress</td>
+										<td>$Contact <br/> $Email</td>
+									</tr>
 								<% end_loop %>
 							</table>
 						<% end_if %>
 						<% include Documents %>
 <% include StatTableFooter %>
-

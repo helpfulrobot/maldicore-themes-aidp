@@ -1,6 +1,6 @@
 <% include StatTableHeader %>
 						$Content
-						<% if AgriPrices %>
+						<% if LPPImportRequests %>
 							<div class="span12">
 								<!-- <p>Quick Find: <input type="text" id="quickfind"/> <a id="cleanfilters" href="#">Clear Filters</a></p> -->
 								<h4>Search Tips</h4>
@@ -15,24 +15,26 @@
 								<thead>
 									<tr>
 										<th>Date</th>
+										<th>Import</th>
 										<th>Quantity</th>
-										<th filter-type='ddl'>Item</th>
-										<th>Boat Price (Rf)</th>
-										<th>Market Price 1 (Rf)</th>
-										<th>Market Price 2 (Rf)</th>
+										<th filter-type='ddl'>Type</th>
+										<th>Purpose</th>
+										<th>Importer Type</th>
+										<th>Country of Import</th>
 									</tr>
 								</thead>
-								<% loop AgriPrices %>
+								<% loop LPPImportRequests %>
 									<!-- Table Header -->
-									<% if AgriPriceItems %>
-										<% loop AgriPriceItems %>
+									<% if ImportItems %>
+										<% loop ImportItems %>
 										<tr>
-											<td>$Up.CollectedDate.Nice</td>
-											<td>$Quantity $Measurement.Name</td>
-											<td>$AgriProduce.Name</td>
-											<td>{$BoatPrice}</td>
-											<td>{$MarketPrice1}</td>
-											<td>{$MarketPrice2}</td>
+											<td>$Up.DateOfImport.Nice</td>
+											<td>$ImportingPlant.Name</td>
+											<td>$Quantity</td>
+											<td>$ItemType.Name</td>
+											<td>$Up.Purpose</td>
+											<td>$Up.Owner.Type.Name</td>
+											<td>$Up.ImportCountry.Name</td>
 										</tr>
 										<% end_loop %>
 									<% end_if %>
@@ -41,4 +43,3 @@
 						<% end_if %>
 						<% include Documents %>
 <% include StatTableFooter %>
-
