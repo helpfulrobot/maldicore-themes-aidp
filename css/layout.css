@@ -714,6 +714,7 @@ span.countdown_section:first-child { display:inline-block; color:#fff; font-size
 #product .product_img{ position:relative; margin-bottom:20px; }
 #product h3 a, #product h3{ color:#000; font-weight:norma;}
 #product .price { color:#1cc3c9; font-size:24px; display:inline-block; margin:10px 0;}
+#product .pub_details {}
 #product .price del{ color:#aaaaaa; font-size:15px; }
 #product .btn{ border:none !important; background:#1cc3c9 !important;  padding:7px 20px !important; display:inline-block; color:#fff; border-radius:5px; -webkit-border-radius:5px; font-size:14px; text-shadow:none !important;}
 .product_view hr{    -moz-border-bottom-colors: none;    -moz-border-left-colors: none;    -moz-border-right-colors: none;    -moz-border-top-colors: none;    border:0;    clear: both;    margin: 20px 0}
