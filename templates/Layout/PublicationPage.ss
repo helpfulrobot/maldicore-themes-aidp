@@ -2,30 +2,40 @@
 <section id="ngo_features" class="mbtm">
 	<section class="container-fluid container">
 		<section class="row-fluid">
-			<section class="span9" id="blog_post_detail">
+			<figure class="span5 first" id="product_image">
+				<% if PhotoSized %>
+					<div class="pro_img" id="pro_img">
+						<img src="$PhotoSized(396).URL" alt="Default image" /> 
+					</div>
+				<% end_if %>
+			</figure>
 
-				<figure class="blog_post mbtm">
-					<% if PhotoSized %>
-					<div class="gallery_img">
-						<img src="$PhotoSized(895).URL" class="right" />
-					</div>
-					<% end_if %>
-					<div class="post_meta_detail"> 
-						<ul>
-							<li class="date"> <i class="icon-time"></i>  $NiceDate  </li>
-							<li class="commetns pull-right"></li>
-						</ul>				
-					</div>
-					<div class="span12 first post_detail"> 
+			<figure class="span4" id="product_info">
+				<h3> $Title </h3>
+				
+				<div class="description_holder"> 
 						$Content
-						$Form
-						$PageComments
-						<% include Documents %>
-					</div>
+				</div>
 
-				</figure>
-			</section>
+					<ul class="product_properties">
+						<li> <i class="icon-chevron-right"></i> $Title  </li>
+						<li> <i class="icon-chevron-right"></i> $Author  </li>
+						<li> <i class="icon-chevron-right"></i> $PublishedDate  </li>
+						<li> <i class="icon-chevron-right"></i> $Tags  </li> 
+					</ul>
+					
+					<ul class="stock_status">
+					<% if PublicationFile %>
+							<li> <i class="icon-ok"></i> Download </li>
+							<li><a href="$PublicationFile.Link"> $Title </a> </li>
+					<% end_if %>
+					</ul>
+
+			</figure>
+
+				
 			<% include InsideBar %>
+			</section>
 		</section>
 	</section>
 </section>
