@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$ContentLocale" dir="$i18nScriptDirection"> 
 <head>
 	<title>$Title &raquo; $SiteConfig.Title</title>
 	$MetaTags(false)
@@ -16,8 +16,15 @@
 	<!-- EI Stuff End -->
 
 	<!-- Css Files Start -->
-	<% require themedCSS(style) %> <!-- All css -->
     <% require themedCSS(bootstrap) %> <!-- Bootstrap Css -->
+	<% if CurrentLocale == "en_GB" %>
+		<% require themedCSS(style) %> <!-- All css -->
+    	<% require themedCSS('bootstrap-responsive') %> <!-- Bootstrap RTL Css -->
+	<% else %>
+		<% require themedCSS(rtl) %>
+    	<% require themedCSS('bootstrap.rtl') %> <!-- Bootstrap Css -->
+    	<% require themedCSS('bootstrap-responsive.rtl') %> <!-- Bootstrap RTL Css -->
+	<% end_if %>
     <% require themedCSS(bootstrap_or) %> <!-- Bootstrap Override Css -->
     <% require themedCSS('skins/green') %> <!-- All css -->
     <% require themedCSS(font-awesome) %> <!-- Font Awesome Css -->
@@ -28,9 +35,11 @@
 		<% require themedCSS(nj) %>
 	</noscript>
 	<!-- Social Icons no JS -->
+	
 
 </head>
 <body>
+
 	<!-- Start Main Wrapper -->
 	<div class="wrapper">
 		<% include Header %>

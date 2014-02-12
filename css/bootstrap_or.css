@@ -1,6 +1,9 @@
-/*[class*=span]:first-child {
+[class*=span]:first-child {
     margin-left: 0 !important;
-}*/
-/*.row-fluid [class*="span"] {
-	margin-left: 16px !important;
-}*/
+}
+.row-fluid [class*="span"] {
+	margin-left: 8px !important;
+}
+.row-fluid [class*="span"] {
+	margin-right: 0 !important;
+}
