@@ -37,7 +37,7 @@
 		
 		<!-- Start of Header Banner/Slider -->
 		<section class="banner_slider mbtm">
-			<!-- Slider Not Included in this Template -->
+			
 		</section>
 		<!-- End of Header Banner/Slider -->
 

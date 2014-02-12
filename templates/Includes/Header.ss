@@ -11,6 +11,7 @@
 						</a>
 					</h1>
 				</section>
+				<% include LocaleMenu %>
 			</section>
 		</section>
 	</section>
