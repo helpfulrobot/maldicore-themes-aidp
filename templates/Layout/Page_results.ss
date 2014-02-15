@@ -1,3 +1,13 @@
+<section id="content" class="mbtm p404">
+    <section class="container-fluid container">
+        <section class="row-fluid">
+            
+            <form id="Search" class="form-search" action="{$BaseHref}home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+                    <input type="text" name="Search" id="SearchForm_SearchForm_Search" value="Perhaps you can try searching again!" />
+                    <button id="SearchForm_SearchForm_action_result"> <i class="icon-search"></i> </button>
+            </form>
+
+<section class="listing_404 span12 first">
 <div id="Content" class="searchResults">
     <% if $Query %>
         <p class="searchQuery">You searched for &quot;{$Query}&quot;</p>
@@ -50,3 +60,7 @@
     </div>
     <% end_if %>
 </div>
+</section>
+</section>
+</section>
+</section>
